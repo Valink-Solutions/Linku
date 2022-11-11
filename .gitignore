@@ -1,0 +1,10 @@
+src/frontend/node_modules
+src/frontend/*.log*
+src/frontend/.nuxt
+src/frontend/.nitro
+src/frontend/.cache
+src/frontend/.output
+src/frontend/.env
+src/frontend/dist
+src/api/**/**/__pycache__
+src/api/.venv

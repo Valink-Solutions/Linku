@@ -1,0 +1,22 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: ./extras/images/linku-icon.png
+app_name: Linku
+micros:
+  - name: api
+    src: ./src/api
+    engine: python3.9
+    path: api
+    public_routes:
+      - /public/*
+
+    presets:
+      env:
+        - name: APP_SECRET
+          description: The application secret for signing auth tokens for the frontend. use a 256-bit key from https://randomkeygen.com/ 
+          default: "FB737938FE69559297373DCFEE7F9"
+
+  - name: frontend
+    src: ./src/frontend
+    engine: nuxt
+    primary: true
