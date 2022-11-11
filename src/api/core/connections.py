@@ -2,9 +2,6 @@ from deta import Deta
 
 deta = Deta()
 
-# Our user database
-auth_db = deta.Base("auth")
-
 # Our url database
 links_db = deta.Base("links")
 
